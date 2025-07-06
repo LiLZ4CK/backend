@@ -19,8 +19,8 @@ SECRET_KEY = os.getenv('SECRET_KEY', get_random_secret_key())
 DEBUG = os.getenv('DEBUG', 'True').lower() == 'true'
 
 # Get ALLOWED_HOSTS from environment variable
-ALLOWED_HOSTS_ENV = os.getenv('ALLOWED_HOSTS')
-ALLOWED_HOSTS = [host.strip() for host in ALLOWED_HOSTS_ENV.split(',')]
+ALLOWED_HOSTS_ENV = os.getenv("ALLOWED_HOSTS", "")
+ALLOWED_HOSTS = [host.strip() for host in ALLOWED_HOSTS_ENV.split(",") if host.strip()]
 
 AUTH_USER_MODEL = 'users.User'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
