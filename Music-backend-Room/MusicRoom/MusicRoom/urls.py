@@ -52,7 +52,7 @@ schema_view = get_schema_view(
     ),
     public=True,
     permission_classes=[permissions.AllowAny],
-    url='http://localhost:8000/api/v1/',  # Add this line
+    url='https://ideal-telegram-wj6jvgpvqj526g9-8000.app.github.dev/',  # Add this line
 
 )
 
