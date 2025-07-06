@@ -116,11 +116,11 @@ else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'musicroom_local',
+            'NAME': 'Postgres-Z_ve',
             'USER': 'postgres',
-            'PASSWORD': 'postgres123',
-            'HOST': 'localhost',
-            'PORT': '5432',
+            'PASSWORD': 'KjNluXmKapWHVbCIcJdIsjpuPfTSibVn',
+            'HOST': 'shortline.proxy.rlwy.net',
+            'PORT': '35283',
         }
     }
 
