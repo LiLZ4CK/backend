@@ -29,7 +29,7 @@ EMAIL_PORT = 587  # Default port for the console email backend
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'samohib50@gmail.com'
 EMAIL_HOST_PASSWORD = 'xvrhvgmzfuwbfgbk'
-DEFAULT_API_URL = os.getenv('DEFAULT_API_URL', 'http://localhost:8000/api/v1/')
+DEFAULT_API_URL = os.getenv('DEFAULT_API_URL', 'https://backend-production-bbaf.up.railway.app:8000')
 JAMENDO_BASE_URL = os.getenv('JAMENDO_BASE_URL', 'https://api.jamendo.com/v3.0')
 
 # Social authentication settings
@@ -284,7 +284,7 @@ SWAGGER_SETTINGS = {
     'LOGIN_URL': None,
     'LOGOUT_URL': None,
     'VALIDATOR_URL': None,
-    'DEFAULT_API_URL': os.getenv('DEFAULT_API_URL', 'https://ideal-telegram-wj6jvgpvqj526g9-8000.app.github.dev/'),
+    'DEFAULT_API_URL': os.getenv('DEFAULT_API_URL', 'https://backend-production-bbaf.up.railway.app:8000'),
 }
 
 # Add this for drf-yasg URL configuration
@@ -312,6 +312,7 @@ if DEBUG:
         "http://127.0.0.1:8000",
         "http://0.0.0.0:8000",
         "https://ideal-telegram-wj6jvgpvqj526g9-8000.app.github.dev",
+        "https://backend-production-bbaf.up.railway.app:8000",
     ]
 
     
